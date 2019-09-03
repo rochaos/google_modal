@@ -1,0 +1,12 @@
+<div class="modal">
+  <div class="table">
+    <div class="close">X</div>
+    <p><b><?= $this->title; ?></b></p>
+    <p><?= $this->textarea; ?></p>
+    <p>
+      <form action=>
+        <input type="button" value="Read more" onclick="window.location.href='<?= $this->link; ?>'" />
+      </form>
+    </p>
+  </div>
+</div>
