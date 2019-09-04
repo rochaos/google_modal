@@ -1,7 +1,6 @@
 <?php
 
 $GLOBALS['BE_MOD']['content']['Google Modal']= array(
-    'tables' => array('tl_google_modal'),
     'icon'   => 'system/modules/google_modal/assets/application.png'
 );
 

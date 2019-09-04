@@ -36,15 +36,13 @@ class Modal extends \ContentElement
 
     /**
      * Create frontend view
-     * @return string
+     *
      */
     private function genFeOutput()
     {
         $GLOBALS['TL_CSS'][]        = 'system/modules/google_modal/assets/styles.css';
         $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/google_modal/assets/script.js';
 
-        $data = \Database::getInstance()->prepare('SELECT * FROM tl_google_modal')->execute();
-
-        $this->Template->name = $data->name;
+        
     }
 }

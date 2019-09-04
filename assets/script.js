@@ -14,11 +14,16 @@ function hideModal(){
     }
 }
 
-var url = window.location.href;
+window.addEventListener("load",function(){
+    var url = document.referrer;
+    if (String(url).indexOf("google")!=-1){
+        showModal();
+    }
+});
 
-if (String(url).includes("google")){
-    console.log(String(url));
-    showModal();
-}
 
-document.addEventListener("mouseleave", showModal);
+document.addEventListener("mouseout", function(e){
+    if (e.relatedTarget===null){
+        showModal();
+    }
+});
